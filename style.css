@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.main {
+    width:400px;
+    margin: 0 auto;
+    background:-moz-linear-gradient(90deg, rgba(0, 150, 136, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%); 
+    background:-webkit-linear-gradient(90deg, rgba(0, 150, 136, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+    background:-o-linear-gradient(90deg, rgba(0, 150, 136, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee82ee', endColorstr='#009688', GradientType=0 );
+    background:-ms-linear-gradient(90deg, rgba(0, 150, 136, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+    background:linear-gradient(90deg, rgba(0, 150, 136, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+}
+
+textarea#input-el {
+    height: 100px;
+    width:400px;
+    border: none;
+    background-color: black;
+    color: chartreuse;
+    text-align:start;
+    font-size: 25px;
+}
+
+.btn {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin-bottom: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.bg-green {
+    background-color: chartreuse;
+}
+
+.txt-red {
+    color: crimson;
+}
+
+.txt-green {
+    color: chartreuse;
+}
+
+.txt-white {
+    color: white;
+}
+
+section.btns-section {
+    padding: 20px 20px 0 20px;
+    display: grid;
+}
+
+@media (min-width: 150px){ /* 2 columns for screens larger than 250px */
+    section.btns-section {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/*@media (min-width: 900px){
+    section.btns-section {
+        grid-template-columns: repeat(4,1fr);
+    }
+}*/
+
