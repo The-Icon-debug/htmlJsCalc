@@ -1,5 +1,33 @@
 const inputEl = document.getElementById('input-el')
 const btnsSection = document.getElementById('btns-section')
+const powerBtn = document.getElementById('power')
+
+let isOff = true
+inputEl.value = 'press on/off to begin'
+
+powerBtn.addEventListener('click', (e)=>{
+    e.target.disabled = true
+    isOff = !isOff
+    const btns = document.querySelectorAll('.toggle')
+
+    if(isOff){
+        btns.forEach(btn => btn.disabled = true)
+        inputEl.value = 'Shutting down'
+        setTimeout(()=>{
+            inputEl.value = 'press on/off to begin'
+            e.target.disabled = false
+        }, 2000)
+        
+    }else{
+        inputEl.value = 'Welcome'
+        setTimeout(()=>{
+            inputEl.value=''
+            btns.forEach(btn => btn.disabled = false)
+            e.target.disabled = false
+        }, 2000)
+        
+    }
+})
 
 btnsSection.addEventListener('click', (e)=> {
    if(e.target.tagName === 'BUTTON'){

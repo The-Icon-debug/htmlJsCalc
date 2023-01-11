@@ -16,7 +16,7 @@ section.main {
 }
 
 textarea#input-el {
-    height: 100px;
+    height: 80px;
     width:400px;
     border: none;
     background-color: black;
@@ -27,16 +27,22 @@ textarea#input-el {
 
 .btn {
     border-radius: 50%;
-    height: 40px;
+    height: 30px;
     width: 40px;
     border: none;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 900;
     font-size: 18px;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    color: darkred;
+    background-color: darkorange;
 }
 
 .bg-gray {
@@ -60,7 +66,7 @@ textarea#input-el {
 }
 
 section.btns-section {
-    padding: 20px 20px 0 20px;
+    padding: 10px 20px 0 20px;
     display: grid;
 }
 
